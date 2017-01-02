@@ -1,0 +1,1 @@
+var server=require('express');var app=new server();app.get('/',function(req,res){ res.send('Hello World From express -- Get Request');});app.get('/:name',function(req,res){ res.send('Hello World From express -- Get Request with parameters !!! <b>Hello ' + req.params.name+'</b>');});app.listen((process.env.PORT || 3000),function(){ console.log('Connected To Server');});
